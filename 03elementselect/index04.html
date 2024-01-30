@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        1. 예약버튼 클릭시 좌석이 최소한개이상 체크되어있지 않다면 경고창을 띄우는 코드를 작성하세요.
+        2. 체크된 값은 예약확인란에 출력해주세요.
+        3. 힌트 - 버튼클릭시 배열에 값을 저장하고, 화면에는 문자열로 만들어 출력 합니다.😊
+    </pre>
+    <div>
+    좌석:<input type="checkbox" name="name"value="10" >10
+    <input type="checkbox" name="name" value="9">9
+    <input type="checkbox" name="name" value="8">8
+    <input type="checkbox" name="name" value="7">7
+    <input type="checkbox" name="name" value="6">6
+    <input type="checkbox" name="name" value="5">5
+    <input type="checkbox" name="name" value="4">4
+    <input type="checkbox" name="name" value="3">3
+    <input type="checkbox" name="name" value="2">2
+    <input type="checkbox" name="name" value="1">1
+    </div>
+    <br><button id="check" onclick="checkededed()">예약버튼</button>
+    <div>
+    <br>예약번호:
+    <div id="check2" >
+
+    </div>
+</div>
+
+    <script>
+        var check=document.getElementById('check');
+        var name=document.getElementsByName("name");
+        var result=document.getElementsByName("check2")
+        function checkededed(){
+           
+            
+            for(var i=0;i<name.length; i++){
+                if(name[i].checked){
+                   result+=name[i].value+"번";
+                }
+                else{
+                    
+                }
+            }
+        check.innerHTML=result;      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    아이디<input type="text" onchange="change()" id="a">
+    <div class="result">
+
+    </div>
+
+    <script>
+        var a=document.getElementById("a");
+        var result=document.querySelector(".result");
+       
+
+        function change(){
+            if(a.value.length<4){
+                alert("아이디4글자 이상이거든요?");
+                
+                a.style.border="1px solid green";
+                result.innerHTML="아이디4글자 이상이거든요?";
+            }else{
+                a.style.border="1px solid red";
+                alert("좋습니다.");
+            }
+           
+
+        }  </script>
+</head>
+<body>
+    
+</body>
+</html>

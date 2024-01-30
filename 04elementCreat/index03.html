@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        
+        td {width: 25%;
+            border: 1px solid black;
+
+        }
+        #text{
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="button" style="background-color: blue; ">1개 생성하기</button>
+    <button id="button2" style="color: aqua;">5개 생성하기</button>
+    <table>
+    <tr>
+       
+            <td>
+                교시
+            </td>
+            <td>
+                훈련과정
+            </td>
+            <td>
+                담당자
+            </td>
+            <td>
+                훈련내용
+            </td>
+        
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="text">
+        </td>
+        <td>
+            <input type="text" id="text">
+        </td>
+        <td>
+            <input type="text" id="text">
+        </td>
+        <td>
+            <input type="text" id="text">
+        </td>
+    </tr>
+</table>
+</body>
+    <script>
+        var text=document.getElementById("text");
+        var button=document.getElementById("button");
+        var button2=document.getElementById("button2");
+
+        text.onclick=function(){
+            
+        }
+    </script>
+</html>

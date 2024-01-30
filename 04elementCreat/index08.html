@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    #id{
+        display: block;
+    }
+  </style>
+</head>
+<body>
+    
+    <h3 id="title"></h3>
+
+    
+    
+    <br><input type="text" id="id" placeholder="이름을 입력하세요">
+    
+    
+
+    <input type="text" id="input1" placeholder="당신의 할일을 적으세요."> 
+    <button type="button" id="bnt">확인2</button>
+    <button id="btn">확인</button>
+    
+    <button type="button">전체삭제하기</button>
+   
+
+    <ul class="list">
+
+
+    </ul>
+
+    <script>
+        var id=document.getElementById("id");
+        var bnt=document.getElementById("bnt");
+        var title=document.getElementById("title");
+        var btn=document.getElementById("btn");
+        var input1=document.getElementById("input1");
+        var list=document.querySelector(".list");
+
+        bnt.onclick= function(){
+
+            title.innerHTML = id.value+"님 안녕하세요";
+            
+                id.style.display="none";
+
+            
+        }
+        btn.onclick=function(){
+            var li=document.createElement("li");
+        li.innerHTML=input1.value+"<button type='button' id='a' onclick='remove(this)'>ㅇ</button>"
+        list.appendChild(li);
+        input1.value = ""; 
+        }
+        function remove(){
+            a.parentElement.style.display="none";
+
+        }
+
+    </script>
+      
+
+</body>
+
+</html>

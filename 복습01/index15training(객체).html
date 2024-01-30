@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {name:' 홍길동', age:20,arr:[1,2,3],func:function(){}};
+        console.log(a.age);
+
+        console.log(a["name"]);
+        console.log(a["age"]);
+
+
+
+
+        //객체안에 겍체
+        var exam= {
+            math:80,eng:70, kor:90
+        };
+        var person ={
+            name:"이순신",
+            exam:{math:80, eng:70,kor:90}
+        };
+
+        console.log(person.exam.eng);
+        console.log(person["exam"]["eng"]);
+        console.log(person["exam"].eng);
+        console.log(person.exam["eng"]);var arr=[
+            {id:1, title:'hello'}
+        ]
+        var arr1=function (){
+            for(var i=0; i<=3; i++){
+                console.log(arr[i]["id"],arr[i].title,arr[i].regdate);
+            }
+        }
+
+</script>    
+</body>
+</html>

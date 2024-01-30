@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3];
+        console.log(arr);
+
+
+        arr[0]=100;
+        console.log(arr);
+        console.log(arr[0]);
+        console.log('길이:', arr.length);
+
+        var arr2= new Array();
+        var arr3= new Array(10);
+        var arr4=new Array(10, 1,2,3,4,5);
+
+        console.log (arr2);
+        console.log(arr3);
+        console.log(arr4);
+
+        var arr =new Array();
+        arr.push(1);
+        arr.push(2);
+        arr.push(3);
+        var x =arr.pop();
+        console.log(x);
+        console.log(arr);
+
+        arr.unshift(1,2,3);
+        console.log(arr);
+
+        arr.splice(3,0,100);
+        console.log(arr);
+        var x=arr.indexOf(100);
+        console.log(x,' 번째 인덱스에 100이 있습니다.');
+
+        var x=arr.indexOf(1000);
+        console.log(x);
+
+        var x = arr.indexOf(2,3);
+        console.log(x);
+
+        var newArr= arr.concat([100,200,300]);
+        console.log(newArr);
+
+        arr.sort();
+        console.log(arr);
+
+
+
+    </script>
+</body>
+</html>
