@@ -8,7 +8,18 @@
 <body>
     <script>
         //버튼보다  script가 위에 작성되는 경우는 화면 로딩 이후에 이벤트를 걸어줍니다.
-        
+        //단,onload이벤트는 화면에서 1개만 사용가능 힙니다.
+        //화면이 모두 로드된 이후에 실행됩니다.
+        window.onload=function(){
+            var btn=document.getElementById("btn")
+            btn.onclick=function(){
+                alert("늘렀냐?");
+            }
+
+            console.log(2);
+        }
+        console.log(1);
     </script>
+    <button type="button" id="btn">버튼</button>
 </body>
 </html>

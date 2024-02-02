@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+    <h3>영화예약</h3>
+    <ul>
+        <li id="id2">
+            <input type="checkbox" value="1">1
+            <input type="checkbox" value="2">2
+            <input type="checkbox" value="3">3
+            <input type="checkbox" value="4">4
+            <input type="checkbox" value="5">5
+            <input type="checkbox" value="6">6
+            <input type="checkbox" value="7">7
+        </li>
+    </ul>
+    <br><br><button id="button2">예약버튼</button>
+
+    <br><br>
+    <p id="pid"></p>
+    <script>
+        var id2 = document.getElementById("id2");
+        var pid = document.getElementById("pid");
+        var button = document.getElementById("button2");
+
+        button.onclick = function () { 
+            if (id2.value == null) {
+                alert("선택하세요");
+            } else {
+                pid.innerHTML = id2.value;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

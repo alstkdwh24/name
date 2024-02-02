@@ -6,8 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    ID:<input type="text" id="id">
+    ID:<input type="text" id="id2">
     기억하기:<input type="checkbox" id="remember">
+    <button type="button" id="btn">로그인</button>
+    <select id="sel2" >
+        <option  value="1">한국어</option>
+        <option value="2">중국어</option>
+        <option  value="3">일본어</option>
+        <option  value="4">미국어</option>
+        <option value="5">영국어</option>
+    </select>
+    <script>
+        var btn=document.getElementById("btn");
+        var remember=document.getElementById("remember");
+        var id=document.getElementById("id2");
+       
+        var sel2=document.getElementById("sel2");
+       
+
+    btn.onclick=function(){
+        alert("아이디는"+id.value+"기억하는 여부는"+remember.checked);
+    }
+    sel2.onchange=function(){
+        if(sel2.value==1){
+            alert("한국어");
+        }
+        else if(sel2.value==2){
+            alert("중국어");
+
+        }else if(sel2.value==3){
+            alert("일본어");
+        }else if(sel2.value==4){
+            alert("미국어");
+        }else{
+            alert("영국어");
+        }
+    }
+
+
+    </script>
     
 </body>
 </html>

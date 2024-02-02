@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        img {
+            width: 20%;
+        }
+        .id2{
+            list-style: none;
+            padding: 0;
+        }
+
+        .b li {
+            float:left;
+
+        }
+
+        .b {
+            border: 1px solid white;
+            width: 100% ;
+            overflow: hidden;
+        }
+        .id2{float:left;
+            margin: 0;
+            width: 25%;
+            box-sizing: border-box;
+        }
+        img{width: 100%}
+    </style>
+</head>
+
+<body>
+    <div class="b">
+     
+            <li class="id2"><img src="img/1.jpg"></li>
+            <li class="id2"><img src="img/2.jpg"></li>
+            <li class="id2"><img src="img/3.jpg"></li>
+            <li class="id2"><img src="img/4.jpg"></li>
+
+       
+    </div>
+    <img src="img/1.jpg" id="img2" width="500px" >
+    <script>
+        var b=document.querySelector(".b");
+        var img2=document.getElementById("img2");
+        b.onclick= function(e){
+            console.log(e.target.src);
+            img2.src=e.target.src;
+            
+
+        }
+
+    </script>
+
+</body>
+
+</html>

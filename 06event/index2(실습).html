@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>열 1</th>
+                <th>열 2</th>
+                <th>열 3</th>
+                <th>열 4</th>
+            </tr>
+            
+        </thead>
+        <tbody class="tb">
+            <!-- <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr> -->
+            <!-- 추가적인 행들을 원하는 만큼 추가할 수 있습니다. -->
+        </tbody>
+    </table>
+
+    <script>
+        var bt = document.querySelector(".tb");
+        var ths = document.querySelectorAll("th");
+        var trs = document.querySelector("tr");
+        for(var a=0;a<4;a++){
+            
+        ths[a].onclick = function () {
+           
+               var tr=document.createElement("tr");
+               bt.appendChild(tr);
+               for(var b=1;b<5;b++){
+                var th=document.createElement("th");
+                tr.appendChild(th);
+
+               }
+            }
+        
+            console.log(1);}
+
+    </script>
+</body>
+
+</html>

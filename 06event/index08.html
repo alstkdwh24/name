@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.com">
+        이름:<input type="text" name="name">
+        <input type="submit" value="전송하기" id="submitBtn">
+    </form>
+    <script>
+        var submitBtn=document.getElementById("submitBtn");
+        var input=document.querySelector("input[name=name]");
+        submitBtn.onclick=function(){
+
+            //submit버튼 고유한 이벤트를 가지고 있음
+            event.preventDefault();
+           
+            if(input.value=""){
+                        alert(" 글좀 적으실래료??");
+                        return;
+            }
+        }
+    </script>
+    <ul>
+   <li> <a html="https://www.google.com/">조민상</a></li>
+</ul>
+</body>
+</html>
